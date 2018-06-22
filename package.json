@@ -1,0 +1,41 @@
+{
+  "name": "idiom.js",
+  "version": "1.0.0",
+  "description": "translate your applications",
+  "main": "lib/index.js",
+  "repository": "git@github.com:fabioars/idiom.js.git",
+  "author": "Fabio Soares <fabioars@live.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clear": "rimraf lib",
+    "build": "npm run clear && gulp build",
+    "build:watch": "npm run clear && gulp watch",
+    "build:umd": "webpack",
+    "build:umd:min": "webpack --output-filename idiom.min.js -p",
+    "build:all": "npm run build && npm run build:umd && npm run build:umd:min",
+    "test": "jest --verbose",
+    "test:tdd": "jest --verbose --watch",
+    "test:coverage": "jest --coverage",
+    "prepublish": "npm run build:all"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint-plugin-jest": "^21.17.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "husky": "^0.14.3",
+    "jest": "^23.1.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
