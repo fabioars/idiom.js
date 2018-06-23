@@ -24,7 +24,9 @@ or download from CDN:
 * [DOWNLOAD](https://unpkg.com/idiom.js@1.0.0/dist/idiom.js) - UNPKG normal version
 
 
-### If you use JS Modules
+### Usage
+
+#### If you use JS Modules
 
 After that you need to create the language files
 
@@ -58,7 +60,7 @@ module.extends =  idiom({
 })(window.navigator.language);
 ```
 
-### In Browser
+#### In Browser
 
 Import the `idiom.min.js` file to your browser
 
@@ -77,6 +79,13 @@ Import the `idiom.min.js` file to your browser
         }
     })(window.navigator.language);
 </script>
+```
+
+After that, you can use `text` function to get that correct string
+
+```js
+    // returns 'Olá!' if in pt-BR and 'Hello!' if not
+    lang.text('hello'); 
 ```
 
 ## Contributing
