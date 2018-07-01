@@ -6,7 +6,7 @@ const config = {
     output: {
         path: resolve(__dirname, 'dist'),
         filename: 'idiom.js',
-        library: 'Idiom',
+        library: 'idiom',
         libraryTarget: 'umd'
     },
     module: {

@@ -1,6 +1,6 @@
 {
   "name": "idiom.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate your JS applications",
   "main": "lib/index.js",
   "repository": "git@github.com:fabioars/idiom.js.git",

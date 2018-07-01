@@ -1,5 +1,5 @@
 
-export default languages => {
+const idiom = languages => {
     if(!languages.default) {
         throw '[idiom.js] You need to set a default language';
     }
@@ -32,3 +32,5 @@ export default languages => {
         }
     });
 };
+
+export default idiom;
