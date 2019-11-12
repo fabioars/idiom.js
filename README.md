@@ -46,7 +46,7 @@ export default idiom({
 })(window.navigator.language);
 
 // Common Modules
-const idiom require('idiom.js');
+const idiom = require('idiom.js');
 
 module.extends =  idiom({
     'default': {
